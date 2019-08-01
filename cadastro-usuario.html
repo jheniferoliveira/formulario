@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <hr>
+    
+     <!-- Container -->
+     <form name="form_cadastro_usuario" action="salvar-usuario.html" method="post">
+        <fieldset>
+            <legend><b>Informações Pessoais</b></legend>
+
+            <label for="nome">Nome:</label> &nbsp; <input id="nome" name="nome" required>
+            <label for="sobrenome">Sobrenome: </label> &nbsp; <input id="sobrenome" name="sobrenome" required><br><br>
+            <label for="email">E-mail</label> &nbsp; <input id="email" name="email" required type="email"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Informações de Usuário</b></legend><br>
+
+            <label for="nomeUsuario">Nome de Usuário:</label> &nbsp; <input id="nomeUsuario" name="nomeUsuario" required><br><br>
+            <label for="senha">Senha: </label> &nbsp; <input id="senha" name="senha" type="password" required>
+            <label for="confSenha">Confirmar Senha: </label> &nbsp; <input id="confSenha" name="confSenha" type="password" required><br><br>
+            <label for="dicaSenha">Dica de Senha: </label> &nbsp; <input id="dicaSenha" name="dicaSenha" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Redes Sociais</b></legend>
+            <img src="iconfinder_linkedin_circle_color_107178.png"> &nbsp; <label for="linkedin"><em>Linkedin.com/in</em></label> &nbsp; <input id="linkedin" name="linkedin"><br><br>
+            <img src="iconfinder_facebook_313103.png"> &nbsp; <label for="facebook"><em>Facebook.com</em></label> &nbsp; <input id="facebook" name="facebook"><br><br>
+            <img src="iconfinder_instagram_313113.png"> &nbsp; <label for="instagram"><em>Instagram.com</em></label> &nbsp; <input id="instagram" name="instagram"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Contrato</strong></legend>
+            Aceita os termos do Contrato?
+            <br>
+            <input type="radio" name="contrato">Sim &nbsp;&nbsp;
+            <input type="radio" name="contrato">Não &nbsp;&nbsp; <br>
+            <br>
+            Aceita esse outro Contrato?
+            <select name="contrato2">
+                <option></option>
+                <option>Sim</option>
+                <option>Com certeza</option>
+            </select>
+
+        </fieldset>
+
+        <button>Salvar</button>
+        </form>
+        <hr>
+</body>
+</html>
