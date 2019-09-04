@@ -3,18 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <style>
+        /* background-image: url(imagens/bombeiro.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;*/
+        
+    .corpo{
+        color: black;
+        background: #E9967A;
+        font-family: 'trebuchet MS';
+       
+
+    }
+    .titulo{
+        color: black;
+        border-bottom: 3px solid black;
+        width: 500px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    .texto{
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        border: 3px double black;
+        padding: 50px;
+    }
+    .caixa-texto{
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+        padding: 10px;
+    }
+    .nome{
+        font-weight: bold;
+        display: inline-block;
+        width: 200px;
+        padding: 10px;
+    }
+    .pass{
+        padding: 10px;
+        font: size 14px;
+    }
+    .botao{
+        padding: 10px;
+        font-size: 14px;
+        border: 2px solid black;
+        background: white;
+        color: black;
+        font-weight: bold;
+        width: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    </style>
 </head>
-<body style="color: blue; background: #7AC5CD; font-family: 'trebuchet MS'">
-    <h1 style= "color: black; border-bottom: 3px solid black; width: 500px; text-align: center; margin-left: auto; margin-right: auto">Área Restrita</h1>
+<body class="corpo">
+    <h1 class="titulo">Área Restrita</h1>
 
         <!-- Container -->
-        <form name="form_login" action="inicial.html" method="post" style="width: 400px; margin-right: auto; margin-left: auto; border: 3px double black; padding: 50px">
+        <form class="texto" name="form_login" action="inicial.html" method="post">
 
-        <label for="usuario" title="Label do Usuário" style="font-weight: bold; display: inline-block; width: 100px; padding: 10px;"> Usuário:</label> <input name="usuario"id="usuario" maxlenght="10" placeholder="Nome de Usuário ou E-mail"style="font-weight: bold; display: inline-block; width: 200px; padding: 10px;"> <br><br>
+        <label class="caixa-texto" for="usuario" title="Label do Usuário"> Usuário:</label> 
+        <input class="nome" name="usuario"id="usuario" maxlenght="10" placeholder="Nome de Usuário ou E-mail"> <br><br>
 
-        <label for="senha" style="font-weight: bold; display: inline-block; width: 100px; padding: 10px;">Senha:</label> &nbsp;<input name="senha"id="senha" type="password" maxlenght="10" size="10" style="padding: 10px; font: size 14px"> <br><br>
+        <label class="caixa-texto" for="senha">Senha:</label> &nbsp;<input class="pass" name="senha"id="senha" type="password" maxlenght="10" size="10"> <br><br>
 
-        <button style="padding: 10px; font-size: 14px; border: 2px solid black; background: white; color: orangered; font-weight: bold; width: 70px; margin-left:  auto; margin-right: auto">Entrar</button>
+        <button class="botao">Entrar</button>
         
         </form>
     
